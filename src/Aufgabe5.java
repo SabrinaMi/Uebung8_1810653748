@@ -11,9 +11,9 @@ public class Aufgabe5
 
         writeFile(); // Zufallszahl zwischen 1 und 50 in eine Textdatei schreiben
 
-
-        System.out.println(getNumberQuantity(Integer.parseInt(JOptionPane.showInputDialog("Bitte Zahl zwischen 1 und 50 eingeben:")))); //Nutzer wird nach einer Zahl gefragt
-
+        int eingabe = Integer.parseInt(JOptionPane.showInputDialog("Bitte geben Sie eine Zahl zwischen 1 und 50 ein!")); //Nutzer wird abgefragt
+        int anzahl = getNumberQuantity(eingabe);// wie oft das System die Zahl die eingegebn wurde findet
+        JOptionPane.showMessageDialog(null,"Die Zahl " + eingabe + " ist " +anzahl+ " mal zu finden.");
     }
 
     public static int getNumberQuantity(int number){
